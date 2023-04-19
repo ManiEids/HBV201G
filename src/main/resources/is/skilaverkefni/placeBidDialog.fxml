@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="is.skilaverkefni.controllerar.PlaceBidDialogController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+    <Label fx:id="itemNameLabel"/>
+    <Label text="Núverandi Verð :"/>
+    <Label fx:id="currentPriceLabel"/>
+    <Label text="Þitt boð :"/>
+    <TextField fx:id="yourBidTextField"/>
+    <HBox alignment="CENTER" spacing="10">
+        <Button onAction="#handlePlaceBidButtonAction" text="Staðfesta boð"/>
+        <Button onAction="#handleCancelButtonAction" text="Hætta við"/>
+    </HBox>
+</VBox>

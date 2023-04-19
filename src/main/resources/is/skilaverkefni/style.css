@@ -1,0 +1,105 @@
+/* style.css */
+
+/* style the logo */
+.logo {
+    -fx-font-size: 56px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to bottom, #F5A623, #F9D423, #F5A623);
+    -fx-stroke: #FFFFFF;
+    -fx-stroke-width: 2;
+}
+
+/* style the tagline */
+.tagline {
+    -fx-font-size: 28px;
+    -fx-font-family: "Arial";
+    -fx-font-style: italic;
+    -fx-text-fill: linear-gradient(to bottom, #00BFFF, #0080FF, #00BFFF);
+    -fx-padding: 10px 0;
+    -fx-stroke: #FFFFFF;
+    -fx-stroke-width: 1.5;
+}
+
+/* style the heading labels */
+.heading {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to bottom, #00BFFF, #0080FF, #00BFFF);
+    -fx-stroke: #FFFFFF;
+    -fx-stroke-width: 1.5;
+}
+
+/* style the list views */
+.list-view {
+    -fx-font-size: 24px;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: #CCCCCC;
+}
+
+/* style the time labels */
+.time-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #6F6F6F;
+    -fx-padding: 5px 10px;
+}
+
+/* style the start menu labels */
+.startmenu-label {
+    -fx-font-size: 28px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to bottom, #F5A623, #F9D423, #F5A623);
+    -fx-stroke: #FFFFFF;
+    -fx-stroke-width: 1.5;
+}
+
+/* style the start menu buttons */
+.startmenu-button {
+    -fx-font-size: 28px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: linear-gradient(to bottom, #00BFFF, #0080FF, #00BFFF);
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+
+/* Set the background image for the Start Menu */
+#startmenu-background {
+    -fx-background-image: url("forsida.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+/* outline the logo text */
+.logo.outline {
+    -fx-stroke: #FFFFFF;
+    -fx-stroke-width: 2;
+}
+
+/* outline the tagline text */
+.tagline.outline {
+    -fx-stroke: #FFFFFF;
+    -fx-stroke-width: 1.5;
+}
+
+/* outline the heading labels */
+.heading.outline {
+-fx-stroke: #FFFFFF;
+-fx-stroke-width: 1.5;
+}
+
+/* outline the start menu labels */
+.startmenu-label.outline {
+-fx-stroke: #FFFFFF;
+-fx-stroke-width: 1.5;
+}

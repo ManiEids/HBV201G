@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane fx:id="root" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is.skilaverkefni.controllerar.AuctionResultController">
+    <top>
+        <HBox style="-fx-background-color: #3f51b5; -fx-padding: 10; -fx-alignment: center;">
+            <Label style="-fx-text-fill: #fff; -fx-font-size: 24px;" text="Útkoma uppboðs" />
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="517.0" prefWidth="684.0" style="-fx-padding: 20px; -fx-spacing: 20px;">
+            <HBox style="-fx-border-color: #3f51b5; -fx-border-width: 2px; -fx-padding: 20px; -fx-spacing: 20px;">
+                <Label style="-fx-font-size: 20px;" text="Valið nafn : " />
+                <Label fx:id="usernameLabel" style="-fx-font-size: 20px;" />
+            </HBox>
+            <HBox style="-fx-border-color: #3f51b5; -fx-border-width: 2px; -fx-padding: 20px; -fx-spacing: 20px;">
+                <Label style="-fx-font-size: 20px;" text="Keyptir hlutir:" />
+                <ListView fx:id="itemList" prefHeight="179.0" prefWidth="347.0" styleClass="list-view" />
+
+                <ImageView fx:id="itemImageView" fitWidth="100" fitHeight="100" /> <!-- Add this ImageView -->
+            </HBox>
+            <HBox style="-fx-border-color: #3f51b5; -fx-border-width: 2px; -fx-padding: 20px; -fx-spacing: 20px;">
+                <Label style="-fx-font-size: 20px;" text="Heildar upphæð:" />
+                <Label fx:id="totalAmountPaidLabel" style="-fx-font-size: 20px;" text="30.000" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="startmenu-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="is.skilaverkefni.controllerar.StartMenuController">
+    <children>
+        <VBox alignment="CENTER" spacing="40" styleClass="vbox-container" AnchorPane.bottomAnchor="200" AnchorPane.leftAnchor="300" AnchorPane.rightAnchor="300" AnchorPane.topAnchor="200">
+            <Label styleClass="logo" text="Uppboð" />
+            <Label styleClass="tagline" text="Verkefni viðmótsforritun - mfe5@hi.is !" />
+            <HBox spacing="10">
+                <Label styleClass="startmenu-label" text="Notendanafn:">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameTextField" promptText="Veldu Nafn" styleClass="startmenu-textfield">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+            </HBox>
+            <HBox spacing="10">
+                <Label styleClass="startmenu-label" text="Uppboðstími:" />
+                <TextField fx:id="auctionTime" promptText="30 sek ef ekkert er valið" styleClass="startmenu-textfield">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+            </HBox>
+            <Button fx:id="startBiddingButton" onAction="#handleStartBiddingButtonAction" text="Hefja Uppboð">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                </padding>
+            </Button>
+        </VBox>
+    </children>
+</AnchorPane>

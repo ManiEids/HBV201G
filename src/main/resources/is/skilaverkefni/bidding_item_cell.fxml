@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx"
+      fx:controller="is.skilaverkefni.controllerar.BiddingItemCellController">
+    <ImageView fx:id="itemImageView" fitHeight="100" fitWidth="100"/>
+    <Text fx:id="itemNameText"/>
+    <Text fx:id="itemDescriptionText"/>
+    <Text fx:id="itemPriceText"/>
+</VBox>
